@@ -1,0 +1,82 @@
+
+while True:
+    a=input(('enter the input what you want X or O : '))
+    if a=='x' or a=='X' or a=='o' or a=='O' :
+        b=input('are you sure you want to play if you want play Yes otherwise you press NOT : ')
+        if b=='yes' or b=='YES' or b=='NO' or b=='no':
+            print('your welcome in the game')
+            display_board(test_board)
+            c=int(input('enter the place from between 0-9 : '))
+            c=[1,2,3,4,5,6,7,8,9]
+            while True:
+                def place_marker(board, marker, position):
+                
+    
+                    board[position]=marker
+                    
+    
+                place_marker(test_board,a.upper(),8)
+
+                display_board(test_board)
+                break
+            
+        else:
+            print('Invalid input please input valid key')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##########################################################################333
+
+def player_input():
+    
+    marker=''
+
+    while marker!='X' and marker!='O':
+        marker=input('player 1: choose X or O : ').upper()
+    if marker=='X':
+        print(f'player1_marker is : X')
+        print(f'palyer2_marker is : O')
+    else:
+        print(f'player1_marker is : O')
+        print(f'palyer2_marker is : X')
+        
+    display_board(test_board)
+player_input()
+
+a=input('ARE YOU SURE YOU WANT TO PLAY GAME YES OR NO : ').upper()
+if a=='YES':
+    b=int(input('enter your place in between 1-9'))
+    test_board=['#','X','O','X','O','X','O','X','O','X']
+    for i in test_board:
+        marker=test_board[b]
+        display_board()
+            
+            
+            b=input('are you sure you want to play if you want play Yes otherwise you press NOT : ')
+        
+    else:
+        print('INVALID INPUT')
+        continue
+        break
+        
